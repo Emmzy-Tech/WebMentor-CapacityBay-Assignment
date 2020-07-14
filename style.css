@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    background-color: red;
+    grid-area: header;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+}
+nav{
+    background-color: blue;
+    grid-area: nav;
+    padding: 10px 0;
+}
+nav h1{
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+nav li{
+    list-style-type: none;
+    width: 100%;
+    /* background-color: red; */
+    padding: 15px 20px;
+}
+nav li:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+section{
+    background-color: #252525;
+    grid-area: section;
+    text-align: center;
+    color: #fff;
+    padding: 20px 30px;
+}
+section h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+section button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+section button:hover{
+    background-color: #8a0202;
+}
+aside{
+    background-color: #00af09;
+    grid-area: aside;
+    text-align: center;
+    padding: 20px 10px;
+}
+aside h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+aside p{
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+aside button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+}
+aside button:hover{
+    background-color: #023f02;
+}
+footer{
+    background-color: purple;
+    grid-area: footer;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.2em;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+}
